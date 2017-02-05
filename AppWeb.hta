@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title>Aplicación Web Version 1</title>
+	
+<HTA:APPLICATION
+  APPLICATIONNAME="CAU Exterior"
+  ID="aplicationHTA"/>
+
+	<script src="servidoresRepresentaciones.json"></script>
+	<script src="clientesRepresentaciones.json"></script>
+
+	<script src="script.js" >Este navegador no soporta JavaScript </script>
+	<link href="estilo.css" rel="stylesheet" type="text/css" />
+	<style>
+	background-color: blue;
+	</style>
+
+</head>
+<body onload="initialize()">
+
+<header>
+<h1>Soporte Informático</h1>
+</header>
+
+<nav>
+<ul>
+           	<li><a class="menuOption" href="#" id="server">Server</a></li>
+            	<li><a class="menuOption" href="#" id="client">Client</a></li>
+            	<li><a class="menuOption" href="#" id="user">User</a></li>
+</ul>
+</nav>
+
+<main>
+<!--SERVER-->
+<section id="serverContent">
+	<form>
+<!--1er Fieldset - BEGIN -->
+	<fieldset>
+	<legend><strong>Server</strong></legend>
+	<ul class="formulario">
+	     <li>
+	     <label for="serverUser" >Nombre de usuario:</label>
+	     <input type="text" name="serverUser" id="serverUser" />
+	     </li>
+
+	     <li>
+	     <label for="serverPassword">Contraseña:</label>
+	     <input type="password" name="serverPassword" id="serverPassword" />
+	     </li>
+
+	     <li>
+	     <label for="nombreServidor">Nombre del servidor:</label>
+	     <input name="nombreServidor" id="nombreServidor" list="browsersServer" />
+	     <datalist id="browsersServer"></datalist>
+	     </li>
+	</ul>
+	
+	<ul class="botones">
+	     <li>
+	     <input name="btnNombreServidor" id="btnNombreServidor" type="button" value="Conexión por TS" />
+	     </li>
+
+	     <li>
+	     <input name="btnPingServidor" id="btnPingServidor" type="button" value="Ping" />
+	     </li>
+
+	     <li>
+	     <input name="btnExplorarServidor" id="btnExplorarServidor" type="button" value="Explorar" />	
+	     </li>
+	</ul>
+
+	<input name="btnBorrarServidor" id="btnBorrarServidor" type="reset" value="Limpiar" />
+	
+
+	</fieldset>
+<!--1er Fieldset - END -->
+	</form>
+</section>
+
+<!--CLIENT-->
+<section id="clientContent">
+	<form>
+<!--2er Fieldset - BEGIN -->
+	<fieldset>
+	<legend><strong>Client</strong></legend>
+	<ul class="formulario">
+	     <li>
+	     <label for="nombreCliente">Nombre del equipo cliente:</label>
+	     <input name="nombreCliente" id="nombreCliente" list="browsersClient" />
+	     <datalist id="browsersClient"></datalist>
+	     </li>
+
+	     <li>
+     	     <input name="btnBorrarCliente" id="btnBorrarCliente" type="reset" value="Limpiar" />
+	     </li>
+	</ul>
+	<h3>Conexión remota:</h3>
+	<ul class="botones">
+	     <li>
+	     <input name="btnNombreCliente" id="btnNombreCliente" type="button" value="Conexión por CRMC" />
+	     </li>
+
+	     <li>
+	     <input name="btnNombreClienteTS" id="btnNombreClienteTS" type="button" value="Conexión por TS" />
+	     </li>
+	</ul>
+	<h3>Prueba de comunicación</h3>
+	<ul class="botones">
+	     <li>
+	     <input name="btnPingCliente" id="btnPingCliente" type="button" value="Ping" />
+	     </li>
+	</ul>
+	<h3>Información del equipo - SCCM</h3>
+	<ul class="botones">
+	     <li>
+	     <input  name="btnSCCMResourceExplorer" id="btnSCCMResourceExplorer" type="button" value="SCCM Resource Explorer" />
+	     </li>
+	</ul>
+	<h3>Obtener contraseña</h3>
+	<ul class="botones">
+	     <li>
+	     <textarea id="lapsContrasenya" rows="6" cols="35"></textarea>
+	     <br />
+	     <input  name="btnObtenerContrasenya" id="btnObtenerContrasenya" type="button" value="Ejecutar" />
+	     </li>
+	</ul>
+
+
+	
+
+	</fieldset>
+<!--2do Fieldset - END-->
+	</form>
+</section>
+
+<!--USER-->
+<section id="userContent">
+	<form>
+<!--3er Fieldset - BEGIN -->
+	<fieldset>
+	<legend><strong>Users</strong></legend>
+	
+	<ul class="formulario">
+	     <li>
+	     <label for="cuentaUsuario">Cuenta de usuario:</label>
+	     <input name="cuentaUsuario" id="cuentaUsuario" type="text" />
+	     </li>
+	</ul>
+	
+	<ul class="botones">
+	     <li>
+	     <input id="btnUserAttribute" type="button" value="Attribute" />
+	     </li>	
+	     <li class="cajaResultadoUsuario"><p>Resultado:<p>
+	     <textarea id="obtenerAtributoUsuario" rows="6" cols="35"></textarea>
+	     </li>
+	</ul>
+	</fieldset>
+<!--3do Fieldset - END-->
+	</form>
+</section>
+
+
+
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>

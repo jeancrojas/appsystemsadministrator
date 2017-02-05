@@ -1,0 +1,84 @@
+body {
+    background-color: darkblue;
+	color: white;
+	witdh: 600px;
+	margin: 50px auto;
+}
+
+h1{
+	text-align: center;
+}
+
+.iconos{
+	width: 40px;
+	border: 1px solid lightgray;
+	box-shadow: 1px 1px 5px gray;
+}
+
+.iconos:hover{
+	border: 1px solid lightblack;
+	box-shadow: 1px 1px 5px black;
+}
+
+.formulario, .botones {
+	list-style-type: none;
+}
+
+.formulario label {
+	display: inline-block;
+	width: 150px;
+	color: white;
+	margin: 5px 0;
+}
+
+.botones li {
+	margin: 5px 0;
+}
+/*Añadido*/
+main {
+            width: 600px;
+}
+        
+nav, main {
+            float: left;
+}
+        
+nav {
+            width: 150px;
+}
+        
+nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+}
+        
+nav a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 0;
+            
+}
+        
+.menuOption:link, .menuOption:visited, .menuOption:hover, .menuOption:active {
+            color: white;
+}
+        
+.menuOption:hover {
+            background-color: black;
+            width: 150px;
+}
+        
+main {
+            width: 450px;
+}
+        
+#clientContent, #userContent, #robocopyContent {
+            display: none;
+            visibility: hidden;
+}
+
+.cajaResultadoUsuario {
+	padding-top: 20px;
+}

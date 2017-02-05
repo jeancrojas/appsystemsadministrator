@@ -1,0 +1,5 @@
+var clientes = [
+ { "nombre":"Client p1" , "cliente":"CLIENT-P1"},
+ { "nombre":"Client p2" , "cliente":"CLIENT-P2"},
+ { "nombre":"Client p3" , "cliente":"CLIENT-P3"}
+]

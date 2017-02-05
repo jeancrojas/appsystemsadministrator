@@ -1,0 +1,5 @@
+var servidores = [
+ { "nombre":"Server S1" , "servidor":"SERVER-S1" , "ilo":"172.16.1.1"},
+ { "nombre":"Server S2" , "servidor":"SERVER-S2" , "ilo":"172.16.1.2"},
+ { "nombre":"Server S3" , "servidor":"SERVER-S3" , "ilo":"172.16.1.3"}
+]
